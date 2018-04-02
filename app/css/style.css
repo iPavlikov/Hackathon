@@ -1,0 +1,7 @@
+.bg-light, .navbar-transparent {
+	transition: all 300ms;
+}
+
+#fullscreen {
+	height: 100vh;
+}
