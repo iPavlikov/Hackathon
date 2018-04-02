@@ -1,7 +1,7 @@
 .bg-light, .navbar-transparent {
 	transition: all 300ms;
 }
-#fullscreen, #about {
+.fullscreen {
 	height: 100vh;
 }
 /* #about > div > div {
@@ -12,4 +12,14 @@
 	line-height: 36px;
 	font-size: 20px;
 	text-align: center;
+}
+
+#team > div > div > div > .photo {
+	width: 90%;
+	height: auto;
+}
+
+#team > div > div > div > .photo > img {
+	width: inherit;
+	height: auto;
 }
