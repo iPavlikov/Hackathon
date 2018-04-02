@@ -1,0 +1,10 @@
+@media screen and (min-width: 768px) {
+	#team > .container > .row > .col-md-3 {
+		transition: box-shadow 200ms, transform 200ms, border-top 200ms;
+	}
+	#team > .container > .row > .col-md-3:hover {
+		box-shadow: 4px 8px 5px lightgray, -4px 8px 5px lightgray;
+		transform: translateY(-8px);
+		border-top: 4px solid #007bff;
+	}
+}

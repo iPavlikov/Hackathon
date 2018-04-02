@@ -25,37 +25,28 @@
 	font-size: 20px;
 	text-align: center;
 }
-
 #team > div > div > div > .photo {
 	width: 90%;
-	height: auto;
 }
-
-#team > div > div > div > .photo > img {
+#team > .container > .row > .col-md-3 > .photo > a {
+	display: block;
 	width: inherit;
 	height: auto;
-}
-
-#team > .container > .row > .col-md-3 {
-	transition: box-shadow 200ms, transform 200ms;
-}
-
-#team > .container > .row > .col-md-3:hover {
-	box-shadow: 4px 8px 5px lightgray, -4px 8px 5px lightgray;
-	transform: translateY(-8px);
-}
-
-#team > .container > .row > .col-md-3:hover > .photo > img {
-	border: 4px solid #007bff;
+	border-radius: 50%;
 	transition: border 200ms;
 }
-
+#team > div > div > div > .photo > a > img {
+	width: 100%;
+	height: auto;
+}
+#team > .container > .row > .col-md-3:hover > .photo > a {
+	border: 2px solid lightgray;
+}
 #team > .container > .row > .col-md-3 > .social-icons {
 	font-size: 22px;
 	line-height: 36px;
 	display: inline;
 }
-
 .social-link {
 	display: flex;
 	align-items: center;
@@ -66,15 +57,12 @@
 	box-sizing: border-box;
 	margin-right: 10px;
 }
-
 .social-link:last-child {
 	margin-right: 0px;
 }	
-
 .w-60 {
 	width: 60%;
 }
-
 .vk {
 	color: #4c75a3;
 	padding-right: 2px !important;
@@ -97,7 +85,6 @@
 	background-color: #007bff;
 	transition: 300ms;
 }
-
 .telegram {
 	color: #0088cc;
 	padding-right: 1px !important;
