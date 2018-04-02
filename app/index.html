@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fa-svg-with-js.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar">
 	<header class="navbar navbar-expand-sm navbar-light px-5 fixed-top">
 		<a href="#" class="navbar-brand">WebBullet</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,8 +15,8 @@
   		</button>
   		<div class="collapse navbar-collapse" id="navbar">
 		    <ul class="navbar-nav ml-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">О нас<span class="sr-only">(current)</span></a>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#about">О нас<!-- <span class="sr-only">(current)</span> --></a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">Команда</a>
@@ -28,8 +28,15 @@
 		<h1 class="text-primary">Web-разработка от команды WebBullet.</h1>
 		<h3 class="">Такая, какой вы хотите её видеть.</h4>
 	</div>
-	<section id="fullscreen">
-		
+	<section id="about" class="bg-light">
+		<div class="container d-flex flex-column justify-content-center align-items-center h-100">
+			<div class="row flex-column justify-content-center align-items-center py-5">
+				<h1 class="mb-5">О нас</h1>
+				<p class="w-75">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit tenetur earum aspernatur repellat optio distinctio dolores saepe, voluptatem dignissimos officia. Nisi vero delectus laboriosam iste saepe voluptates eligendi error quaerat dolorem pariatur dolor eum praesentium fuga id reiciendis illo, ab.
+				</p>
+			</div>
+		</div>
 	</section>
 
 

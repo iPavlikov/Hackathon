@@ -1,14 +1,19 @@
 jQuery(document).ready(function($) {
-  $(window).scroll(function() {
-    var scrollPos = $(window).scrollTop();
-        header = $('header');
+  	
+if ($(window).scrollTop() > 200) {
+	$('header').addClass('bg-light');
+};
 
-    if (scrollPos > 200) {
-      header.removeClass('navbar-transparent');
-      header.addClass('bg-light');
-    } else {
-      header.removeClass('bg-light');
-      header.addClass('navbar-transparent');
-    }
-  });
+  	$(window).scroll(function() {
+	var header = $('header');
+	var scrollPos = $(window).scrollTop();    
+
+	    if (scrollPos > 200) {
+	      header.removeClass('navbar-transparent');
+	      header.addClass('bg-light');
+	    } else {
+	      header.removeClass('bg-light');
+	      header.addClass('navbar-transparent');
+	    }
+  	});
 });
