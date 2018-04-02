@@ -4,6 +4,9 @@
 .fullscreen {
 	min-height: 100vh;
 }
+.shadowed {
+	box-shadow: 0 4px 6px 0px lightgray;
+}
 /* #about > div > div {
 	box-shadow: 1px 1px 5px lightgray;
 	border-radius: 10px;
