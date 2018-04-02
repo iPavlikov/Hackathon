@@ -4,7 +4,9 @@
 .navbar-brand {
 	font-size: 20px;
 }
-
+.navbar-light .navbar-toggler {
+	border: none;
+}
 .bg-light, .navbar-transparent {
 	transition: all 300ms;
 }
