@@ -4,11 +4,22 @@
 .navbar-brand {
 	font-size: 20px;
 }
+.brand-text {
+	font-size: 40px;
+	line-height: 40px;
+	color: white !important;
+	font-family: Helvetica;
+	font-weight: 700;
+	letter-spacing: -5px;
+}
 .navbar-light .navbar-toggler {
 	border: none;
 }
-.bg-light, .navbar-transparent {
-	transition: all 300ms;
+.bg-navbar, .navbar-transparent {
+	transition: background-color 300ms;
+}
+.bg-navbar {
+	background-color: rgba(0,123,255,0.95);
 }
 #fullscreen {
 	background: url('../img/fullscreen_1.jpg') bottom center;
@@ -25,24 +36,28 @@
 	font-size: 20px;
 	text-align: center;
 }
-#team > div > div > div > .photo {
+#team > .container > .row > .col-md > .photo {
 	width: 90%;
 }
-#team > .container > .row > .col-md-3 > .photo > a {
+#team > .container > .row > .col-md > .photo > a {
 	display: block;
 	width: inherit;
 	height: auto;
 	border-radius: 50%;
 	transition: border 200ms;
 }
-#team > div > div > div > .photo > a > img {
+#team > .container > .row > .col-md > .photo > a > img {
 	width: 100%;
 	height: auto;
+	transition: transform 100ms;
 }
-#team > .container > .row > .col-md-3:hover > .photo > a {
+#team > .container > .row > .col-md:hover > .photo > a > img {
+	transform: scale(2, 2);
+}
+#team > .container > .row > .col-md:hover > .photo > a {
 	border: 2px solid lightgray;
 }
-#team > .container > .row > .col-md-3 > .social-icons {
+#team > .container > .row > .col-md > .social-icons {
 	font-size: 22px;
 	line-height: 36px;
 	display: inline;
@@ -59,15 +74,17 @@
 }
 .social-link:last-child {
 	margin-right: 0px;
-}	
+}
+.mini-icon {
+	padding-right: 2px !important;
+	padding-top: 1px !important;
+	box-sizing: border-box;
+}
 .w-60 {
 	width: 60%;
 }
 .vk {
 	color: #4c75a3;
-	padding-right: 2px !important;
-	padding-top: 1px !important;
-	box-sizing: border-box;
 	transition: 300ms;
 }
 .vk:hover {
@@ -75,7 +92,6 @@
 	background-color: #007bff;
 	transition: 300ms;
 }
-
 .github {
 	color: #333;
 	transition: 300ms;
@@ -87,9 +103,6 @@
 }
 .telegram {
 	color: #0088cc;
-	padding-right: 1px !important;
-	padding-top: 1px !important;
-	box-sizing: border-box;
 	transition: 300ms;
 }
 .telegram:hover {
@@ -97,4 +110,10 @@
 	background-color: #007bff;
 	transition: 300ms;
 }
-
+.style-border {
+	border-top: 4px solid #007bff;
+}
+.footer-ic {
+	color: black;
+	transition: 300ms;
+}

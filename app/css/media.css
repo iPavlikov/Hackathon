@@ -1,10 +1,20 @@
 @media screen and (min-width: 768px) {
-	#team > .container > .row > .col-md-3 {
+	#team > .container > .row > h1 {
+		position: relative;
+		bottom: 6px;
+	}
+	#team > .container > .row > .col-md {
 		transition: box-shadow 200ms, transform 200ms, border-top 200ms;
 	}
-	#team > .container > .row > .col-md-3:hover {
+	#team > .container > .row > .col-md:hover {
 		box-shadow: 4px 8px 5px lightgray, -4px 8px 5px lightgray;
 		transform: translateY(-8px);
 		border-top: 4px solid #007bff;
+	}
+}
+@media screen and (max-width: 767px) {
+	#team > .container > .row > .col-md {
+	border-radius: 10px;
+	box-shadow: 1px 2px 5px lightgray, -1px 2px 5px lightgray;
 	}
 }

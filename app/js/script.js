@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
   	
 	if ($(window).scrollTop() > 200) {
-		$('header').addClass('bg-light');
+		$('header').addClass('bg-navbar');
 	};
 
   	$(window).scroll(function() {
@@ -10,9 +10,9 @@ jQuery(document).ready(function($) {
 
 	    if (scrollPos > 200) {
 	      header.removeClass('navbar-transparent');
-	      header.addClass('bg-light');
+	      header.addClass('bg-navbar');
 	    } else {
-	      header.removeClass('bg-light');
+	      header.removeClass('bg-navbar');
 	      header.addClass('navbar-transparent');
 	    }
   	});
