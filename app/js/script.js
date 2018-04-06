@@ -50,4 +50,16 @@ jQuery(document).ready(function($) {
 	$('.navbar-brand').click(function(){
     	$(".navbar-collapse").collapse('hide');
 	});
+
+	var teammate = $('#team .container .row .col-md');
+	teammate.hover(function() {
+		$(this).addClass('active-mate');
+	}, function() {
+		$(this).removeClass('active-mate');
+	});
 });
+
+
+
+
+

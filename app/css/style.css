@@ -21,6 +21,12 @@
 .bg-navbar {
 	background-color: rgba(0,123,255,0.95);
 }
+.navbar-light > .navbar-collapse > .navbar-nav > .nav-item > .nav-link {
+    color: white;
+}
+.navbar-light > .navbar-collapse > .navbar-nav > .nav-item > .nav-link.active {
+    font-weight: 800 !important;
+}
 #fullscreen {
 	background: url('../img/fullscreen_1.jpg') bottom center;
 	background-size: cover;
@@ -49,10 +55,6 @@
 #team > .container > .row > .col-md > .photo > a > img {
 	width: 100%;
 	height: auto;
-	transition: transform 100ms;
-}
-#team > .container > .row > .col-md:hover > .photo > a > img {
-	transform: scale(2, 2);
 }
 #team > .container > .row > .col-md:hover > .photo > a {
 	border: 2px solid lightgray;
