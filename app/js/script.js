@@ -1,5 +1,19 @@
-jQuery(document).ready(function($) {
-  	
+// $('#team-block').load('team.html');
+
+// function loadTeamMate() {
+// 	$('#pre-team').removeClass('hidden');
+// 	$('#team-block').load('test.html');
+// 	$('#team-block').on('load', function() {
+// 		$('#pre-team').fadeOut('slow')
+// 	});
+// };
+
+// jQuery(document).ready(function($) {
+
+$(window).on('load', function(){
+	$('#pre-main').fadeOut('slow')
+
+	
 	if ($(window).scrollTop() > 200) {
 		$('header').addClass('bg-navbar');
 	};
@@ -20,7 +34,7 @@ jQuery(document).ready(function($) {
   	// Add scrollspy to <body>
 	$('body').scrollspy({target: "#navbar", offset: 0});
 	// Add smooth scrolling on all links inside the navbar
-	$("#navbar a").on('click', function(event) {
+	$("#navbar a").on('click', function() {
 	  // Make sure this.hash has a value before overriding default behavior
 	  if (this.hash !== "") {
 	    // Prevent default anchor click behavior
@@ -51,13 +65,19 @@ jQuery(document).ready(function($) {
     	$(".navbar-collapse").collapse('hide');
 	});
 
-	var teammate = $('#team .container .row .col-md');
-	teammate.hover(function() {
+	$('#team-block .main-cards').hover(function() {
 		$(this).addClass('active-mate');
 	}, function() {
 		$(this).removeClass('active-mate');
 	});
+
+
+	// $('#team-block .main-cards .photo img').on("click",function() {
+	// 	$('#team-block .main-cards').fadeOut('slow');
+	// 	setTimeout(loadTeamMate,200);
+	// });
 });
+// });
 
 
 
