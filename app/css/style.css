@@ -136,7 +136,7 @@ button.close span {
 .hide {
     /*opacity: 0;*/
 }
-.scroll-anim {
+/* .scroll-anim {
     animation-play-state: paused !important;
 }
 .animation {
@@ -238,7 +238,7 @@ button.close span {
     to {
         opacity: 1;
     }
-}
+} */
 /* .highlight {
 	animation: highlight 1s;
 }
