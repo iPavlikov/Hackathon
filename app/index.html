@@ -28,16 +28,16 @@
 		    </ul>
   		</div>
 	</header>
-	<div class="d-flex flex-column justify-content-center align-items-center fullscreen px-4" id="fullscreen">
+	<div class="d-flex flex-column justify-content-center align-items-center fullscreen px-4" data-parallax="scroll" data-natural-height="900" data-image-src="./img/fullscreen_1.jpg">
 		<h1 class="text-primary text-center">Web-разработка от команды WebBullet.</h1>
 		<h3 class="text-center text-white">Такая, какой вы хотите её видеть.</h4>
 	</div>
 	<section id="about" class="bg-light fullscreen d-flex justify-content-center align-items-center px-3 py-5">
 		<div class="container">
 			<div class="row d-flex justify-content-center">
-				<h1 class="mb-5 pt-5">О нас</h1>
+				<h1 class="mb-5 pt-5 scroll-anim fadeInDown hide">О нас</h1>
 			</div>
-			<div class="row d-flex justify-content-center bg-white py-5 rounded shadowed style-border">
+			<div class="row d-flex justify-content-center bg-white py-5 rounded shadowed style-border scroll-anim fadeInLeft hide">
 				<p class="w-75">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit tenetur earum aspernatur repellat optio distinctio dolores saepe, voluptatem dignissimos officia. Nisi vero delectus laboriosam iste saepe voluptates eligendi error quaerat dolorem pariatur dolor eum praesentium fuga id reiciendis illo, ab.
 				</p>
@@ -50,7 +50,7 @@
 				<h1 class="mb-5 pt-5">Наша команда</h1>
 			</div>
 			<div class="row flex-wrap px-3" id="team-block">
-				<div class="col-md d-flex flex-column justify-content-center align-items-center pb-3 mb-3 flex-w main-cards">
+				<div class="col-md d-flex flex-column justify-content-center align-items-center pb-3 mb-3 flex-w main-cards scroll-anim fadeIn hide">
 					<div class="photo d-flex justify-content-center align-items-center py-4">
 						<img src="img/tmate-1.jpg" alt="" class="rounded-circle" data-name="morin">
 					</div>
@@ -67,7 +67,7 @@
 						<a href="#" class="social-link telegram mini-icon"><i class="fab fa-telegram-plane"></i></a>
 					</div>
 				</div>
-				<div class="col-md d-flex flex-column justify-content-center align-items-center pb-3 mb-3 flex-w main-cards">
+				<div class="col-md d-flex flex-column justify-content-center align-items-center pb-3 mb-3 flex-w main-cards scroll-anim fadeIn hide delay-short">
 					<div class="photo d-flex justify-content-center align-items-center py-4">
 						<img src="img/tmate-2.jpg" alt="" class="rounded-circle" data-name="krotov">
 					</div>
@@ -84,7 +84,7 @@
 						<a href="#" class="social-link telegram mini-icon"><i class="fab fa-telegram-plane"></i></a>
 					</div>
 				</div>
-				<div class="col-md d-flex flex-column justify-content-center align-items-center pb-3 mb-3 flex-w main-cards">
+				<div class="col-md d-flex flex-column justify-content-center align-items-center pb-3 mb-3 flex-w main-cards scroll-anim fadeIn hide delay-1">
 					<div class="photo d-flex justify-content-center align-items-center py-4">
 						<img src="img/tmate-3.jpg" alt="" class="rounded-circle" data-name="pavlikov">
 					</div>
@@ -101,7 +101,7 @@
 						<a href="http://telegram.me/vantys" class="social-link telegram mini-icon"><i class="fab fa-telegram-plane"></i></a>
 					</div>
 				</div>
-				<div class="col-md d-flex flex-column justify-content-center align-items-center pb-3 mb-3 flex-w main-cards">
+				<div class="col-md d-flex flex-column justify-content-center align-items-center pb-3 mb-3 flex-w main-cards scroll-anim fadeIn hide delay-medium">
 					<div class="photo d-flex justify-content-center align-items-center py-4">
 						<img src="img/tmate-4.jpg" alt="" class="rounded-circle" data-name="korolev">
 					</div>
@@ -154,6 +154,7 @@
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.min.js"></script>
 	<script src="js/fontawesome-all.min.js"></script>
 	<script src="js/script.js"></script>
 </body>

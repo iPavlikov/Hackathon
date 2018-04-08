@@ -10,6 +10,7 @@
 		box-shadow: 4px 8px 5px lightgray, -4px 8px 5px lightgray;
 		transform: translateY(-8px);
 		border-top: 4px solid #007bff;
+        margin-top: -4px;
 	}
 }
 @media screen and (max-width: 767px) {
